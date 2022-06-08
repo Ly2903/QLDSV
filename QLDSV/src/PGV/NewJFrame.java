@@ -61,11 +61,14 @@ public class NewJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTextField1 = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jToolBar1 = new javax.swing.JToolBar();
         jButton1 = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JToolBar.Separator();
         jButton2 = new javax.swing.JButton();
+        jSeparator17 = new javax.swing.JToolBar.Separator();
+        jButton7 = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JToolBar.Separator();
         jButton3 = new javax.swing.JButton();
         jSeparator4 = new javax.swing.JToolBar.Separator();
@@ -100,6 +103,19 @@ public class NewJFrame extends javax.swing.JFrame {
         btnCapQuyenChoRole = new javax.swing.JButton();
         jSeparator9 = new javax.swing.JSeparator();
         jLabel5 = new javax.swing.JLabel();
+        ThuHoiQuyen = new javax.swing.JPanel();
+        jSeparator18 = new javax.swing.JSeparator();
+        jSeparator19 = new javax.swing.JSeparator();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tbQuyenRole = new javax.swing.JTable();
+        jLabel27 = new javax.swing.JLabel();
+        cbTenRole = new javax.swing.JComboBox<>();
+        jLabel28 = new javax.swing.JLabel();
+        txtDoiTuongThuHoi = new javax.swing.JTextField();
+        jLabel29 = new javax.swing.JLabel();
+        txtQuyenThuHoi = new javax.swing.JTextField();
+        jButton10 = new javax.swing.JButton();
+        jLabel30 = new javax.swing.JLabel();
         TaoLogin = new javax.swing.JPanel();
         jSeparator10 = new javax.swing.JSeparator();
         jSeparator11 = new javax.swing.JSeparator();
@@ -155,12 +171,15 @@ public class NewJFrame extends javax.swing.JFrame {
         lbNewPW = new javax.swing.JLabel();
         lbConfirmPW = new javax.swing.JLabel();
 
+        jTextField1.setText("jTextField1");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jToolBar1.setBackground(new java.awt.Color(255, 255, 255));
         jToolBar1.setRollover(true);
+        jToolBar1.setMaximumSize(new java.awt.Dimension(932, 32767));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -190,6 +209,21 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
         jToolBar1.add(jButton2);
+        jToolBar1.add(jSeparator17);
+
+        jButton7.setBackground(new java.awt.Color(255, 255, 255));
+        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGE/removetheproperty_theapplication_eliminar_2965 (1).png"))); // NOI18N
+        jButton7.setText("    Thu hồi quyền   ");
+        jButton7.setFocusable(false);
+        jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton7.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(jButton7);
         jToolBar1.add(jSeparator2);
 
         jButton3.setBackground(new java.awt.Color(255, 255, 255));
@@ -255,9 +289,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jToolBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -268,6 +300,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel2.setLayout(new java.awt.CardLayout());
 
         WELCOM.setBackground(new java.awt.Color(255, 255, 255));
+        WELCOM.setMaximumSize(null);
 
         jLabel22.setFont(new java.awt.Font("Segoe UI", 1, 28)); // NOI18N
         jLabel22.setText("CHÀO MỪNG ĐẾN VỚI PHÒNG GIÁO VỤ");
@@ -281,28 +314,26 @@ public class NewJFrame extends javax.swing.JFrame {
         WELCOM.setLayout(WELCOMLayout);
         WELCOMLayout.setHorizontalGroup(
             WELCOMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(WELCOMLayout.createSequentialGroup()
-                .addGroup(WELCOMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, WELCOMLayout.createSequentialGroup()
+                .addContainerGap(263, Short.MAX_VALUE)
+                .addGroup(WELCOMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 547, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(WELCOMLayout.createSequentialGroup()
-                        .addGap(253, 253, 253)
                         .addComponent(jLabel23)
                         .addGap(47, 47, 47)
-                        .addComponent(lbHoTenGV, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(WELCOMLayout.createSequentialGroup()
-                        .addGap(147, 147, 147)
-                        .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 547, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(202, Short.MAX_VALUE))
+                        .addComponent(lbHoTenGV, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(225, 225, 225))
         );
         WELCOMLayout.setVerticalGroup(
             WELCOMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(WELCOMLayout.createSequentialGroup()
-                .addGap(147, 147, 147)
+                .addGap(171, 171, 171)
                 .addComponent(jLabel22)
-                .addGap(71, 71, 71)
+                .addGap(72, 72, 72)
                 .addGroup(WELCOMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lbHoTenGV, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(257, Short.MAX_VALUE))
+                    .addComponent(lbHoTenGV, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(266, Short.MAX_VALUE))
         );
 
         jPanel2.add(WELCOM, "card4");
@@ -333,24 +364,23 @@ public class NewJFrame extends javax.swing.JFrame {
             TaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jSeparator6)
             .addComponent(jSeparator7)
-            .addGroup(TaoRoleLayout.createSequentialGroup()
-                .addGap(187, 187, 187)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(52, 52, 52)
-                .addComponent(txtTenRole, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(257, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TaoRoleLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(TaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TaoRoleLayout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addGap(364, 364, 364))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TaoRoleLayout.createSequentialGroup()
-                        .addComponent(btnTaoRole, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(361, 361, 361))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TaoRoleLayout.createSequentialGroup()
-                        .addComponent(lbTenRole, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(334, 334, 334))))
+                .addComponent(btnTaoRole, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(431, 431, 431))
+            .addGroup(TaoRoleLayout.createSequentialGroup()
+                .addGroup(TaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lbTenRole, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(TaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(TaoRoleLayout.createSequentialGroup()
+                            .addGap(434, 434, 434)
+                            .addComponent(jLabel6))
+                        .addGroup(TaoRoleLayout.createSequentialGroup()
+                            .addGap(271, 271, 271)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(33, 33, 33)
+                            .addComponent(txtTenRole, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(331, Short.MAX_VALUE))
         );
         TaoRoleLayout.setVerticalGroup(
             TaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -363,13 +393,13 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGroup(TaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(txtTenRole, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbTenRole, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 166, Short.MAX_VALUE)
                 .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(27, 27, 27)
                 .addComponent(btnTaoRole)
-                .addGap(37, 37, 37))
+                .addGap(28, 28, 28))
         );
 
         jPanel2.add(TaoRole, "card5");
@@ -426,40 +456,40 @@ public class NewJFrame extends javax.swing.JFrame {
             .addComponent(jSeparator9)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CapQuyenChoRoleLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(280, 280, 280))
+                .addComponent(btnCapQuyenChoRole)
+                .addGap(433, 433, 433))
             .addGroup(CapQuyenChoRoleLayout.createSequentialGroup()
                 .addGroup(CapQuyenChoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(CapQuyenChoRoleLayout.createSequentialGroup()
-                        .addGap(226, 226, 226)
-                        .addGroup(CapQuyenChoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(273, 273, 273)
+                        .addGroup(CapQuyenChoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(CapQuyenChoRoleLayout.createSequentialGroup()
                                 .addGroup(CapQuyenChoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel3)
                                     .addComponent(jLabel4))
                                 .addGap(70, 70, 70)
                                 .addGroup(CapQuyenChoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(cbDoiTuong, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(cbQuyen, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(cbDoiTuong, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(cbQuyen, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                             .addGroup(CapQuyenChoRoleLayout.createSequentialGroup()
                                 .addGroup(CapQuyenChoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel2)
                                     .addComponent(jLabel1))
                                 .addGap(41, 41, 41)
-                                .addGroup(CapQuyenChoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(cbRole, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(cbLoaiDoiTuong, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGroup(CapQuyenChoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(cbRole, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(cbLoaiDoiTuong, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(CapQuyenChoRoleLayout.createSequentialGroup()
-                        .addGap(391, 391, 391)
-                        .addComponent(btnCapQuyenChoRole)))
-                .addContainerGap(297, Short.MAX_VALUE))
+                        .addGap(329, 329, 329)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(347, Short.MAX_VALUE))
         );
         CapQuyenChoRoleLayout.setVerticalGroup(
             CapQuyenChoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CapQuyenChoRoleLayout.createSequentialGroup()
-                .addGap(29, 29, 29)
+                .addGap(28, 28, 28)
                 .addComponent(jLabel5)
-                .addGap(32, 32, 32)
+                .addGap(33, 33, 33)
                 .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
                 .addGroup(CapQuyenChoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -481,10 +511,141 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnCapQuyenChoRole)
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addContainerGap(76, Short.MAX_VALUE))
         );
 
         jPanel2.add(CapQuyenChoRole, "card2");
+
+        ThuHoiQuyen.setBackground(new java.awt.Color(255, 255, 255));
+
+        jScrollPane2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jScrollPane2MouseClicked(evt);
+            }
+        });
+
+        tbQuyenRole.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "Tên Role", "Quyền", "Đối tượng"
+            }
+        ));
+        tbQuyenRole.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tbQuyenRoleMouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(tbQuyenRole);
+
+        jLabel27.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel27.setText("Chọn Role:");
+
+        cbTenRole.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        cbTenRole.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbTenRoleActionPerformed(evt);
+            }
+        });
+
+        jLabel28.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel28.setText("Đối tượng:");
+
+        txtDoiTuongThuHoi.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtDoiTuongThuHoi.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtDoiTuongThuHoi.setEnabled(false);
+
+        jLabel29.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel29.setText("Quyền:");
+
+        txtQuyenThuHoi.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtQuyenThuHoi.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtQuyenThuHoi.setEnabled(false);
+
+        jButton10.setBackground(new java.awt.Color(255, 255, 255));
+        jButton10.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton10.setText("Thu hồi");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+
+        jLabel30.setFont(new java.awt.Font("Segoe UI", 1, 28)); // NOI18N
+        jLabel30.setText("THU HỒI QUYỀN");
+
+        javax.swing.GroupLayout ThuHoiQuyenLayout = new javax.swing.GroupLayout(ThuHoiQuyen);
+        ThuHoiQuyen.setLayout(ThuHoiQuyenLayout);
+        ThuHoiQuyenLayout.setHorizontalGroup(
+            ThuHoiQuyenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator18)
+            .addGroup(ThuHoiQuyenLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jSeparator19))
+            .addGroup(ThuHoiQuyenLayout.createSequentialGroup()
+                .addGroup(ThuHoiQuyenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ThuHoiQuyenLayout.createSequentialGroup()
+                        .addGap(214, 214, 214)
+                        .addGroup(ThuHoiQuyenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(ThuHoiQuyenLayout.createSequentialGroup()
+                                .addGroup(ThuHoiQuyenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(ThuHoiQuyenLayout.createSequentialGroup()
+                                        .addGap(103, 103, 103)
+                                        .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(64, 64, 64)
+                                        .addComponent(cbTenRole, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(ThuHoiQuyenLayout.createSequentialGroup()
+                                        .addGap(74, 74, 74)
+                                        .addGroup(ThuHoiQuyenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel29))
+                                        .addGap(90, 90, 90)
+                                        .addGroup(ThuHoiQuyenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(txtDoiTuongThuHoi, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtQuyenThuHoi, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 535, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(ThuHoiQuyenLayout.createSequentialGroup()
+                        .addGap(434, 434, 434)
+                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(ThuHoiQuyenLayout.createSequentialGroup()
+                        .addGap(380, 380, 380)
+                        .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 286, Short.MAX_VALUE))
+        );
+        ThuHoiQuyenLayout.setVerticalGroup(
+            ThuHoiQuyenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ThuHoiQuyenLayout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(jLabel30)
+                .addGap(29, 29, 29)
+                .addComponent(jSeparator18, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(ThuHoiQuyenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel27)
+                    .addComponent(cbTenRole, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(ThuHoiQuyenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel28)
+                    .addComponent(txtDoiTuongThuHoi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                .addGroup(ThuHoiQuyenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel29)
+                    .addComponent(txtQuyenThuHoi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34)
+                .addComponent(jSeparator19, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton10)
+                .addGap(24, 24, 24))
+        );
+
+        jPanel2.add(ThuHoiQuyen, "card8");
 
         TaoLogin.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -542,17 +703,8 @@ public class NewJFrame extends javax.swing.JFrame {
             TaoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jSeparator10)
             .addComponent(jSeparator11, javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(TaoLoginLayout.createSequentialGroup()
-                .addGroup(TaoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(TaoLoginLayout.createSequentialGroup()
-                        .addGap(331, 331, 331)
-                        .addComponent(jLabel8))
-                    .addGroup(TaoLoginLayout.createSequentialGroup()
-                        .addGap(385, 385, 385)
-                        .addComponent(btnTaoLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(341, Short.MAX_VALUE))
-            .addGroup(TaoLoginLayout.createSequentialGroup()
-                .addGap(206, 206, 206)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TaoLoginLayout.createSequentialGroup()
+                .addContainerGap(293, Short.MAX_VALUE)
                 .addGroup(TaoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9)
@@ -565,41 +717,53 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(cbMaUser, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(txtMKLogin)
                     .addComponent(lbLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lbMK, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lbMaUser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lbMK, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(52, 52, 52)
                 .addComponent(lbTenUser, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(62, 62, 62))
+                .addGap(125, 125, 125))
+            .addGroup(TaoLoginLayout.createSequentialGroup()
+                .addGroup(TaoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(TaoLoginLayout.createSequentialGroup()
+                        .addGap(347, 347, 347)
+                        .addComponent(lbMaUser, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(TaoLoginLayout.createSequentialGroup()
+                        .addGap(394, 394, 394)
+                        .addComponent(jLabel8))
+                    .addGroup(TaoLoginLayout.createSequentialGroup()
+                        .addGap(444, 444, 444)
+                        .addComponent(btnTaoLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         TaoLoginLayout.setVerticalGroup(
             TaoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TaoLoginLayout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addGap(40, 40, 40)
                 .addComponent(jLabel8)
-                .addGap(30, 30, 30)
+                .addGap(18, 18, 18)
                 .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addGroup(TaoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(txtTenLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16)
-                .addGroup(TaoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(txtMKLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lbMK, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addGroup(TaoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
-                    .addComponent(cbUserMapping, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addGroup(TaoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(TaoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel12)
-                        .addComponent(cbMaUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(lbTenUser, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33)
+                .addGroup(TaoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lbTenUser, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(TaoLoginLayout.createSequentialGroup()
+                        .addGroup(TaoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel9)
+                            .addComponent(txtTenLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lbLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(16, 16, 16)
+                        .addGroup(TaoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel10)
+                            .addComponent(txtMKLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lbMK, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addGroup(TaoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel11)
+                            .addComponent(cbUserMapping, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(29, 29, 29)
+                        .addGroup(TaoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel12)
+                            .addComponent(cbMaUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(64, 64, 64)
                 .addComponent(lbMaUser, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
@@ -678,11 +842,15 @@ public class NewJFrame extends javax.swing.JFrame {
 
         txtLoginXoa.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtLoginXoa.setToolTipText("");
+        txtLoginXoa.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtLoginXoa.setEnabled(false);
 
         jLabel21.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel21.setText("Role:");
 
         txtRoleXoa.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtRoleXoa.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtRoleXoa.setEnabled(false);
         txtRoleXoa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtRoleXoaActionPerformed(evt);
@@ -724,96 +892,104 @@ public class NewJFrame extends javax.swing.JFrame {
             ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jSeparator14)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ThemXoaLoginVaoRoleLayout.createSequentialGroup()
-                .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(ThemXoaLoginVaoRoleLayout.createSequentialGroup()
-                        .addGap(49, 49, 49)
-                        .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel18)
-                            .addComponent(jLabel19)
-                            .addComponent(jLabel24))
-                        .addGap(24, 24, 24)
-                        .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(cbLogin, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(cbDoiTuongThem, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(cbNameRole, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(ThemXoaLoginVaoRoleLayout.createSequentialGroup()
-                        .addGap(136, 136, 136)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 296, Short.MAX_VALUE)
+                .addGap(202, 202, 202)
+                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(166, 166, 166))
+                .addGap(182, 182, 182))
             .addGroup(ThemXoaLoginVaoRoleLayout.createSequentialGroup()
-                .addGap(233, 233, 233)
+                .addGap(293, 293, 293)
                 .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ThemXoaLoginVaoRoleLayout.createSequentialGroup()
-                .addComponent(jSeparator15, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jSeparator16, javax.swing.GroupLayout.PREFERRED_SIZE, 470, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(ThemXoaLoginVaoRoleLayout.createSequentialGroup()
-                            .addComponent(jLabel25)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(txtTimKiem, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jSeparator15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 462, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(ThemXoaLoginVaoRoleLayout.createSequentialGroup()
+                        .addGap(66, 66, 66)
+                        .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel18)
+                                .addComponent(jLabel19))
+                            .addGroup(ThemXoaLoginVaoRoleLayout.createSequentialGroup()
+                                .addComponent(jLabel24)
+                                .addGap(7, 7, 7)))
+                        .addGap(28, 28, 28)
+                        .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(cbNameRole, 0, 171, Short.MAX_VALUE)
+                            .addComponent(cbLogin, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(cbDoiTuongThem, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ThemXoaLoginVaoRoleLayout.createSequentialGroup()
+                        .addGap(41, 41, 41)
                         .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(ThemXoaLoginVaoRoleLayout.createSequentialGroup()
-                                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(txtRoleXoa, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(ThemXoaLoginVaoRoleLayout.createSequentialGroup()
-                                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(75, 75, 75)
-                                    .addComponent(txtLoginXoa, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap())
+                            .addGroup(ThemXoaLoginVaoRoleLayout.createSequentialGroup()
+                                .addComponent(jLabel25)
+                                .addGap(36, 36, 36))
+                            .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ThemXoaLoginVaoRoleLayout.createSequentialGroup()
+                                    .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(ThemXoaLoginVaoRoleLayout.createSequentialGroup()
+                                            .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(67, 67, 67)
+                                            .addComponent(txtRoleXoa, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(ThemXoaLoginVaoRoleLayout.createSequentialGroup()
+                                            .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(75, 75, 75)
+                                            .addComponent(txtLoginXoa, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGap(203, 203, 203))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ThemXoaLoginVaoRoleLayout.createSequentialGroup()
+                                    .addComponent(jSeparator16, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addContainerGap()))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ThemXoaLoginVaoRoleLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtTimKiem, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(58, 58, 58))))
         );
         ThemXoaLoginVaoRoleLayout.setVerticalGroup(
             ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ThemXoaLoginVaoRoleLayout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addContainerGap()
                 .addComponent(jLabel17)
-                .addGap(18, 18, 18)
+                .addGap(27, 27, 27)
                 .addComponent(jSeparator14, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel25)
+                    .addComponent(txtTimKiem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
                 .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(ThemXoaLoginVaoRoleLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
-                        .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel25)
-                            .addComponent(txtTimKiem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtLoginXoa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel20))
-                        .addGap(18, 18, 18)
-                        .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel21)
-                            .addComponent(txtRoleXoa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(41, 41, 41))
-                    .addGroup(ThemXoaLoginVaoRoleLayout.createSequentialGroup()
-                        .addGap(55, 55, 55)
                         .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel18)
                             .addComponent(cbNameRole, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(72, 72, 72)
                         .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel24)
-                            .addComponent(cbDoiTuongThem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(55, 55, 55)
-                        .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cbLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel19))
-                        .addGap(98, 98, 98)))
-                .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jSeparator15, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jSeparator16, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                            .addComponent(cbDoiTuongThem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(33, 33, 33)
                 .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton8)
-                    .addComponent(jButton9))
+                    .addComponent(txtLoginXoa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel20)
+                    .addComponent(jLabel19)
+                    .addComponent(cbLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
+                .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtRoleXoa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel21))
+                .addGap(29, 29, 29)
+                .addGroup(ThemXoaLoginVaoRoleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ThemXoaLoginVaoRoleLayout.createSequentialGroup()
+                        .addComponent(jSeparator16, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton9))
+                    .addGroup(ThemXoaLoginVaoRoleLayout.createSequentialGroup()
+                        .addComponent(jSeparator15, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton8)))
                 .addGap(28, 28, 28))
         );
 
@@ -868,66 +1044,71 @@ public class NewJFrame extends javax.swing.JFrame {
             .addComponent(jSeparator12)
             .addComponent(jSeparator13)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DoiMatKhauLayout.createSequentialGroup()
-                .addGap(0, 317, Short.MAX_VALUE)
-                .addComponent(jLabel13)
-                .addGap(285, 285, 285))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DoiMatKhauLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnDoiMatKhau, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(356, 356, 356))
+                .addGroup(DoiMatKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DoiMatKhauLayout.createSequentialGroup()
+                        .addComponent(jLabel13)
+                        .addGap(362, 362, 362))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DoiMatKhauLayout.createSequentialGroup()
+                        .addComponent(btnDoiMatKhau, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(429, 429, 429))))
             .addGroup(DoiMatKhauLayout.createSequentialGroup()
-                .addGap(216, 216, 216)
+                .addGap(314, 314, 314)
                 .addGroup(DoiMatKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(DoiMatKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jLabel14)
                         .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jLabel16))
                     .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22)
-                .addGroup(DoiMatKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lbConfirmPW, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
-                    .addComponent(lbNewPW, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lbLoginDoiMK, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(cbLoginDoiMK, 0, 204, Short.MAX_VALUE)
-                    .addComponent(txtNewPW)
-                    .addComponent(txtConfirmPW)
-                    .addComponent(cbDoiTuongDoiMK, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(DoiMatKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbLoginDoiMK, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbConfirmPW, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbNewPW, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNewPW, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbLoginDoiMK, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbDoiTuongDoiMK, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtConfirmPW, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 341, Short.MAX_VALUE))
         );
         DoiMatKhauLayout.setVerticalGroup(
             DoiMatKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DoiMatKhauLayout.createSequentialGroup()
-                .addGap(33, 33, 33)
+                .addGap(28, 28, 28)
                 .addComponent(jLabel13)
-                .addGap(32, 32, 32)
+                .addGap(37, 37, 37)
                 .addComponent(jSeparator12, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
+                .addGap(25, 25, 25)
                 .addGroup(DoiMatKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel26)
                     .addComponent(cbDoiTuongDoiMK, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
-                .addGroup(DoiMatKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(cbLoginDoiMK, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addGroup(DoiMatKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cbLoginDoiMK, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel14))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbLoginDoiMK, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(11, 11, 11)
-                .addGroup(DoiMatKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtNewPW, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel15))
-                .addGap(10, 10, 10)
-                .addComponent(lbNewPW, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(DoiMatKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel16)
-                    .addComponent(txtConfirmPW, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(11, 11, 11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(DoiMatKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DoiMatKhauLayout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addGroup(DoiMatKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel15)
+                            .addComponent(txtNewPW, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lbNewPW, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(40, 40, 40)
+                        .addComponent(jLabel16))
+                    .addGroup(DoiMatKhauLayout.createSequentialGroup()
+                        .addGap(109, 109, 109)
+                        .addComponent(txtConfirmPW, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(14, 14, 14)
                 .addComponent(lbConfirmPW, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jSeparator13, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
+                .addGap(33, 33, 33)
                 .addComponent(btnDoiMatKhau)
-                .addGap(45, 45, 45))
+                .addGap(44, 44, 44))
         );
 
         jPanel2.add(DoiMatKhau, "card6");
@@ -1038,13 +1219,26 @@ public class NewJFrame extends javax.swing.JFrame {
         }
     }
 
-    public void loadDataCbRole() {
+    public void loadDataCbNameRole() {
         cbNameRole.removeAllItems();
-        cbRole.removeAllItems();
+        cbTenRole.removeAllItems();
         getDataRoleName();
         for (Role role : listRole) {
-            cbRole.addItem(role.getRoleName());
+            
             cbNameRole.addItem(role.getRoleName());
+            
+        }
+    }
+    
+     public void loadDataCbRole() {
+        cbRole.removeAllItems();
+        cbTenRole.removeAllItems();
+        getDataRoleName();
+        for (Role role : listRole) {
+            if(!role.getRoleName().equals("PGV")){
+             cbRole.addItem(role.getRoleName());
+            cbTenRole.addItem(role.getRoleName());
+            }
         }
     }
 
@@ -1085,6 +1279,8 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel2.add(TaoRole);
         jPanel2.repaint();
         jPanel2.revalidate();
+        txtTenRole.setText("");
+        lbTenRole.setText("");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -1093,6 +1289,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel2.add(TaoLogin);
         jPanel2.repaint();
         jPanel2.revalidate();
+        lbTenUser.setText("");
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -1101,8 +1298,10 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel2.add(ThemXoaLoginVaoRole);
         jPanel2.repaint();
         jPanel2.revalidate();
-        loadDataCbRole();
+        loadDataCbNameRole();
         loadDataTableRoleLogin();
+        txtQuyenThuHoi.setText("");
+        txtDoiTuongThuHoi.setText("");
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -1111,6 +1310,8 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel2.add(DoiMatKhau);
         jPanel2.repaint();
         jPanel2.revalidate();
+        txtNewPW.setText("");
+        txtConfirmPW.setText("");
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -1159,10 +1360,6 @@ public class NewJFrame extends javax.swing.JFrame {
             txtTenRole.setText("");
         }
     }//GEN-LAST:event_btnTaoRoleActionPerformed
-
-    private void txtRoleXoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRoleXoaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtRoleXoaActionPerformed
 
     public String[] quyenTable_Views() {
         String[] quyen = new String[]{"All", "Alter", "Delete", "Insert", "References", "Select",
@@ -1266,27 +1463,6 @@ public class NewJFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_cbUserMappingActionPerformed
 
-    private void cbNameRoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbNameRoleActionPerformed
-
-//        if (cbNameRole.getSelectedItem() != null) {
-//            String tenRole = cbNameRole.getSelectedItem().toString();
-//            cbLogin.removeAllItems();
-//            listLoginRole.clear();
-//            try {
-//                Connection conn = ConnectToDB.getConnection(USER_NAME, PASS_WORD);
-//                CallableStatement ps = conn.prepareCall("{call SP_LayLGnameThuocRole (?)}");
-//                ps.setString(1, tenRole);
-//                ResultSet rs = ps.executeQuery();
-//                while (rs.next()) {
-//                    Login login = new Login(rs.getString(1), rs.getString(2));
-//                    listLoginRole.add(login);
-//                }
-//            } catch (Exception e) {
-//            }
-//        }
-
-    }//GEN-LAST:event_cbNameRoleActionPerformed
-
     public boolean checkKhoangTrang(String a) {
         return a.matches("\\w+");
     }
@@ -1345,130 +1521,8 @@ public class NewJFrame extends javax.swing.JFrame {
         txtTenLogin.setText("");
         txtMKLogin.setText("");
         cbMaUser.removeAllItems();
+        lbTenUser.setText("");
     }//GEN-LAST:event_btnTaoLoginActionPerformed
-
-    private void cbLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbLoginActionPerformed
-
-    }//GEN-LAST:event_cbLoginActionPerformed
-
-    private void cbDoiTuongThemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbDoiTuongThemActionPerformed
-       // if (cbDoiTuongThem.getSelectedItem() != null) {
-            String loai = cbDoiTuongThem.getSelectedItem().toString();
-            if (loai.equals("Giảng viên")) {
-                cbLogin.removeAllItems();
-                try {
-                    Connection conn = ConnectToDB.getConnection(USER_NAME, PASS_WORD);
-                    PreparedStatement ps = conn.prepareStatement("Select * from V_LoginChuaThuocRole_GV");
-                    ResultSet rs = ps.executeQuery();
-                    while (rs.next()) {                      
-                        cbLogin.addItem(rs.getString(1));
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            } else {
-                cbLogin.removeAllItems();
-                try {
-                    Connection conn = ConnectToDB.getConnection(USER_NAME, PASS_WORD);
-                    PreparedStatement ps = conn.prepareStatement("Select * from V_LoginChuaThuocRole_SV");
-                    ResultSet rs = ps.executeQuery();
-                    while (rs.next()) {                      
-                        cbLogin.addItem(rs.getString(1));
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-
-       // }
-    }//GEN-LAST:event_cbDoiTuongThemActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        if (cbLogin.getSelectedItem() == null) {
-            JOptionPane.showMessageDialog(this, "Vui lòng chọn tài khoản", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
-        } else {
-            try {
-                Connection conn = ConnectToDB.getConnection(USER_NAME, PASS_WORD);
-                CallableStatement ps = conn.prepareCall("{Call SP_ThemLoginVaoRole (?,?)}");
-                ps.setString(1, cbLogin.getSelectedItem().toString());
-                ps.setString(2, cbNameRole.getSelectedItem().toString());
-                ps.execute();
-                JOptionPane.showMessageDialog(this, "Thêm tài khoản vào Role thành công", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
-                ps.close();
-
-            } catch (SQLException se) {
-                se.printStackTrace();
-                System.out.println(" Lỗi Thêm");
-            }
-            cbLogin.removeAllItems();
-            loadDataTableRoleLogin();
-        }
-    }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void txtTimKiemKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTimKiemKeyTyped
-        String s = txtTimKiem.getText();
-        s = s + evt.getKeyChar();
-        s = s.trim();
-        dtm = (DefaultTableModel) tbRoleLogin.getModel();
-        dtm.setNumRows(0);
-        Connection connection = ConnectToDB.getConnection(USER_NAME, PASS_WORD);
-        try {
-            PreparedStatement ps = connection.prepareStatement("select * from V_LayRoleName_LGname_Hoten where HOTEN like  N'%" + s + "%'");
-            ResultSet rs = ps.executeQuery();
-            while (rs.next()) {
-                Vector vt = new Vector();
-                vt.add(rs.getString(1));
-                vt.add(rs.getString(2));
-                vt.add(rs.getString(3));
-                dtm.addRow(vt);
-            }
-            rs.close();
-            ps.close();
-            connection.close();
-        } catch (Exception e) {
-            System.out.println("E: " + e);
-        }
-    }//GEN-LAST:event_txtTimKiemKeyTyped
-
-    private void tbRoleLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbRoleLoginMouseClicked
-
-        dtm = (DefaultTableModel) tbRoleLogin.getModel();
-
-        int j = tbRoleLogin.getSelectedRow();
-
-        int i = tbRoleLogin.convertRowIndexToModel(j);
-        System.out.println(dtm.getValueAt(i, 1).toString());
-        if (dtm.getValueAt(i, 1).toString().equalsIgnoreCase(USER_NAME)) {
-            JOptionPane.showMessageDialog(this, "Không thể xóa tài khoản đang sử dụng");
-        } else {
-            txtLoginXoa.setText(dtm.getValueAt(i, 1).toString());
-            txtRoleXoa.setText(dtm.getValueAt(i, 0).toString());
-        }
-    }//GEN-LAST:event_tbRoleLoginMouseClicked
-
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        if (txtLoginXoa.getText().equals("") || txtRoleXoa.getText().equals("")) {
-            JOptionPane.showMessageDialog(this, "Chon đối tượng cần xóa!");
-        } else if(JOptionPane.showConfirmDialog(this, "Bạn có muốn xóa "+txtLoginXoa.getText()+" khỏi "+txtRoleXoa.getText()+" không?","Thông báo", JOptionPane.YES_NO_OPTION)== JOptionPane.YES_OPTION){
-            try {
-                Connection conn = ConnectToDB.getConnection(USER_NAME, PASS_WORD);
-                CallableStatement ps = conn.prepareCall("{call SP_XoaLoginKhoiRole (?,?)}");
-                ps.setString(1, txtRoleXoa.getText());
-                ps.setString(2, txtLoginXoa.getText());
-                ps.execute();
-                JOptionPane.showMessageDialog(this, "Đã xóa Login khỏi Role", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
-                ps.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }else{
-            return;
-        }
-        txtTimKiem.setText("");
-        txtRoleXoa.setText("");
-        txtLoginXoa.setText("");
-        loadDataTableRoleLogin();
-    }//GEN-LAST:event_jButton9ActionPerformed
 
     private void cbDoiTuongDoiMKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbDoiTuongDoiMKActionPerformed
         if (cbDoiTuongDoiMK.getSelectedItem() != null) {
@@ -1601,6 +1655,237 @@ public class NewJFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_cbMaUserActionPerformed
 
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        jPanel2.removeAll();
+        jPanel2.add(ThuHoiQuyen);
+        jPanel2.repaint();
+        jPanel2.revalidate();
+        loadDataCbRole();
+        txtQuyenThuHoi.setText("");
+        txtDoiTuongThuHoi.setText("");
+        
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    public void loadDataTbQuyenRole(String role){
+        dtm = (DefaultTableModel) tbQuyenRole.getModel();
+           dtm.setNumRows(0);
+           Connection connection = ConnectToDB.getConnection(USER_NAME, PASS_WORD);
+        try {
+            CallableStatement ps = connection.prepareCall("{Call SP_LayQuyenDaCapChoRole (?)}");
+            ps.setString(1, role);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                Vector vt = new Vector();
+                vt.add(rs.getString(1));
+                vt.add(rs.getString(2));
+                vt.add(rs.getString(4));
+                dtm.addRow(vt);
+            }
+            rs.close();
+            ps.close();
+            connection.close();
+        } catch (Exception e) {
+            System.out.println("E: " + e);
+        }
+    }
+    
+    private void cbTenRoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbTenRoleActionPerformed
+       if(cbTenRole.getSelectedItem() != null){
+           String role = cbTenRole.getSelectedItem().toString();
+           loadDataTbQuyenRole(role);         
+       }
+    }//GEN-LAST:event_cbTenRoleActionPerformed
+
+    private void tbQuyenRoleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbQuyenRoleMouseClicked
+        dtm = (DefaultTableModel) tbQuyenRole.getModel();
+
+        int j = tbQuyenRole.getSelectedRow();
+
+        int i = tbQuyenRole.convertRowIndexToModel(j);
+       
+//        if (dtm.getValueAt(i, 1).toString().equalsIgnoreCase(USER_NAME)) {
+//            JOptionPane.showMessageDialog(this, "Không thể xóa tài khoản đang sử dụng");
+//        } else {
+            txtQuyenThuHoi.setText(dtm.getValueAt(i, 1).toString());
+            txtDoiTuongThuHoi.setText(dtm.getValueAt(i, 2).toString());
+      //  }
+    }//GEN-LAST:event_tbQuyenRoleMouseClicked
+
+    private void jScrollPane2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jScrollPane2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jScrollPane2MouseClicked
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        if(JOptionPane.showConfirmDialog(this, "Bạn có muốn thu hồi quyền "+
+                txtQuyenThuHoi.getText() + " "+ txtDoiTuongThuHoi.getText()+" khỏi "+
+                cbTenRole.getSelectedItem().toString()+ " không?", "Thông báo", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION){
+        try {
+            Connection conn = ConnectToDB.getConnection(USER_NAME, PASS_WORD);
+            CallableStatement ps = conn.prepareCall("{call SP_THUHOIQUYENCHOROLE (?,?,?)}");
+            ps.setString(1, cbTenRole.getSelectedItem().toString());
+            ps.setString(2, txtQuyenThuHoi.getText());
+            ps.setString(3, txtDoiTuongThuHoi.getText());
+            ps.execute();
+            ps.close();
+            JOptionPane.showMessageDialog(this, "Thu hồi quyền thành công", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
+
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(this, "Lỗi cấp quyền");
+            System.out.println("Loi goi SP_THUHOIQUYENCHOROLE");
+        }
+        txtQuyenThuHoi.setText("");
+        txtDoiTuongThuHoi.setText("");
+        loadDataTbQuyenRole(cbTenRole.getSelectedItem().toString());
+        }
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void txtTimKiemKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTimKiemKeyTyped
+        String s = txtTimKiem.getText();
+        s = s + evt.getKeyChar();
+        s = s.trim();
+        dtm = (DefaultTableModel) tbRoleLogin.getModel();
+        dtm.setNumRows(0);
+        Connection connection = ConnectToDB.getConnection(USER_NAME, PASS_WORD);
+        try {
+            PreparedStatement ps = connection.prepareStatement("select * from V_LayRoleName_LGname_Hoten where HOTEN like  N'%" + s + "%'");
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                Vector vt = new Vector();
+                vt.add(rs.getString(1));
+                vt.add(rs.getString(2));
+                vt.add(rs.getString(3));
+                dtm.addRow(vt);
+            }
+            rs.close();
+            ps.close();
+            connection.close();
+        } catch (Exception e) {
+            System.out.println("E: " + e);
+        }
+    }//GEN-LAST:event_txtTimKiemKeyTyped
+
+    private void cbDoiTuongThemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbDoiTuongThemActionPerformed
+        // if (cbDoiTuongThem.getSelectedItem() != null) {
+            String loai = cbDoiTuongThem.getSelectedItem().toString();
+            if (loai.equals("Giảng viên")) {
+                cbLogin.removeAllItems();
+                try {
+                    Connection conn = ConnectToDB.getConnection(USER_NAME, PASS_WORD);
+                    PreparedStatement ps = conn.prepareStatement("Select * from V_LoginChuaThuocRole_GV");
+                    ResultSet rs = ps.executeQuery();
+                    while (rs.next()) {
+                        cbLogin.addItem(rs.getString(1));
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            } else {
+                cbLogin.removeAllItems();
+                try {
+                    Connection conn = ConnectToDB.getConnection(USER_NAME, PASS_WORD);
+                    PreparedStatement ps = conn.prepareStatement("Select * from V_LoginChuaThuocRole_SV");
+                    ResultSet rs = ps.executeQuery();
+                    while (rs.next()) {
+                        cbLogin.addItem(rs.getString(1));
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+            // }
+    }//GEN-LAST:event_cbDoiTuongThemActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        if (txtLoginXoa.getText().equals("") || txtRoleXoa.getText().equals("")) {
+            JOptionPane.showMessageDialog(this, "Chon đối tượng cần xóa!");
+        } else if(JOptionPane.showConfirmDialog(this, "Bạn có muốn xóa "+txtLoginXoa.getText()+" khỏi "+txtRoleXoa.getText()+" không?","Thông báo", JOptionPane.YES_NO_OPTION)== JOptionPane.YES_OPTION){
+            try {
+                Connection conn = ConnectToDB.getConnection(USER_NAME, PASS_WORD);
+                CallableStatement ps = conn.prepareCall("{call SP_XoaLoginKhoiRole (?,?)}");
+                ps.setString(1, txtRoleXoa.getText());
+                ps.setString(2, txtLoginXoa.getText());
+                ps.execute();
+                JOptionPane.showMessageDialog(this, "Đã xóa Login khỏi Role", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
+                ps.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }else{
+            return;
+        }
+        txtTimKiem.setText("");
+        txtRoleXoa.setText("");
+        txtLoginXoa.setText("");
+        loadDataTableRoleLogin();
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void txtRoleXoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRoleXoaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtRoleXoaActionPerformed
+
+    private void tbRoleLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbRoleLoginMouseClicked
+
+        dtm = (DefaultTableModel) tbRoleLogin.getModel();
+
+        int j = tbRoleLogin.getSelectedRow();
+
+        int i = tbRoleLogin.convertRowIndexToModel(j);
+        System.out.println(dtm.getValueAt(i, 1).toString());
+        if (dtm.getValueAt(i, 1).toString().equalsIgnoreCase(USER_NAME)) {
+            JOptionPane.showMessageDialog(this, "Không thể xóa tài khoản đang sử dụng");
+        } else {
+            txtLoginXoa.setText(dtm.getValueAt(i, 1).toString());
+            txtRoleXoa.setText(dtm.getValueAt(i, 0).toString());
+        }
+    }//GEN-LAST:event_tbRoleLoginMouseClicked
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        if (cbLogin.getSelectedItem() == null) {
+            JOptionPane.showMessageDialog(this, "Vui lòng chọn tài khoản", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
+        } else {
+            try {
+                Connection conn = ConnectToDB.getConnection(USER_NAME, PASS_WORD);
+                CallableStatement ps = conn.prepareCall("{Call SP_ThemLoginVaoRole (?,?)}");
+                ps.setString(1, cbLogin.getSelectedItem().toString());
+                ps.setString(2, cbNameRole.getSelectedItem().toString());
+                ps.execute();
+                JOptionPane.showMessageDialog(this, "Thêm tài khoản vào Role thành công", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
+                ps.close();
+
+            } catch (SQLException se) {
+                se.printStackTrace();
+                System.out.println(" Lỗi Thêm");
+            }
+            cbLogin.removeAllItems();
+            loadDataTableRoleLogin();
+        }
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void cbLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbLoginActionPerformed
+
+    }//GEN-LAST:event_cbLoginActionPerformed
+
+    private void cbNameRoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbNameRoleActionPerformed
+
+        //        if (cbNameRole.getSelectedItem() != null) {
+            //            String tenRole = cbNameRole.getSelectedItem().toString();
+            //            cbLogin.removeAllItems();
+            //            listLoginRole.clear();
+            //            try {
+                //                Connection conn = ConnectToDB.getConnection(USER_NAME, PASS_WORD);
+                //                CallableStatement ps = conn.prepareCall("{call SP_LayLGnameThuocRole (?)}");
+                //                ps.setString(1, tenRole);
+                //                ResultSet rs = ps.executeQuery();
+                //                while (rs.next()) {
+                    //                    Login login = new Login(rs.getString(1), rs.getString(2));
+                    //                    listLoginRole.add(login);
+                    //                }
+                //            } catch (Exception e) {
+                //            }
+            //        }
+    }//GEN-LAST:event_cbNameRoleActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1642,6 +1927,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel TaoLogin;
     private javax.swing.JPanel TaoRole;
     private javax.swing.JPanel ThemXoaLoginVaoRole;
+    private javax.swing.JPanel ThuHoiQuyen;
     private javax.swing.JPanel WELCOM;
     private javax.swing.JButton btnCapQuyenChoRole;
     private javax.swing.JButton btnDoiMatKhau;
@@ -1657,13 +1943,16 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbNameRole;
     private javax.swing.JComboBox<String> cbQuyen;
     private javax.swing.JComboBox<String> cbRole;
+    private javax.swing.JComboBox<String> cbTenRole;
     private javax.swing.JComboBox<String> cbUserMapping;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
@@ -1685,7 +1974,11 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -1695,6 +1988,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JToolBar.Separator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator11;
@@ -1703,6 +1997,9 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator14;
     private javax.swing.JSeparator jSeparator15;
     private javax.swing.JSeparator jSeparator16;
+    private javax.swing.JToolBar.Separator jSeparator17;
+    private javax.swing.JSeparator jSeparator18;
+    private javax.swing.JSeparator jSeparator19;
     private javax.swing.JToolBar.Separator jSeparator2;
     private javax.swing.JToolBar.Separator jSeparator3;
     private javax.swing.JToolBar.Separator jSeparator4;
@@ -1711,6 +2008,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JToolBar jToolBar1;
     private javax.swing.JLabel lbConfirmPW;
     private javax.swing.JLabel lbHoTenGV;
@@ -1721,11 +2019,14 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel lbNewPW;
     private javax.swing.JLabel lbTenRole;
     private javax.swing.JLabel lbTenUser;
+    private javax.swing.JTable tbQuyenRole;
     private javax.swing.JTable tbRoleLogin;
     private javax.swing.JPasswordField txtConfirmPW;
+    private javax.swing.JTextField txtDoiTuongThuHoi;
     private javax.swing.JTextField txtLoginXoa;
     private javax.swing.JPasswordField txtMKLogin;
     private javax.swing.JPasswordField txtNewPW;
+    private javax.swing.JTextField txtQuyenThuHoi;
     private javax.swing.JTextField txtRoleXoa;
     private javax.swing.JTextField txtTenLogin;
     private javax.swing.JTextField txtTenRole;
